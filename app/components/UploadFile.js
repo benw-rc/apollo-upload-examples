@@ -1,8 +1,8 @@
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 
-const S3_DOCUMENT_STORE_BUCKET = 'my-bucket'
-const S3_DOCUMENT_STORE_KEY = 'reqs'
+const S3_DOCUMENT_STORE_BUCKET = 'bucket' // replace bucket here
+const S3_DOCUMENT_STORE_KEY = 'orders'
 
 let s3Location = {}
 s3Location = {
@@ -28,12 +28,12 @@ const uploadOneFile = ({ mutate }) => {
       files: [file]
     }
   }) => {
-    //eslint-disable-next-line
-    console.log('iupload: ', file)
     const input = {
       config: {
-        AMPLICON: 'amplicon',
-        EMAILS: 'al@rc.com'
+        PROJECT_NAME: 'testing project',
+        PANEL_NAME: 'my panel',
+        PANEL_TYPE: 'panel type',
+        EMAILS: 'scientist@rc.com'
       },
       file,
       s3Location
