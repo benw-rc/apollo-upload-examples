@@ -1,0 +1,24 @@
+@import '../../../scss/variables.scss';
+.argus-hint-button {
+  display: inline-block;
+  position: relative;
+  .ui.pointing.label {
+    display: none;
+    position: absolute;
+    top: -40px;
+    z-index: 1200;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &:hover .ui.label {
+    display: block;
+  }
+  .ui.inverted.button {
+    border: 1px solid $heading-color !important;
+    box-shadow: none !important;
+    &.has-text {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

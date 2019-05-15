@@ -1,0 +1,20 @@
+@import '../../../scss/variables.scss';
+.argus-checkbox {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  input.hidden+label {
+    color: $heading-color;
+    &:hover {
+      color: $heading-color;
+      font-weight: bold;
+    }
+  }
+  &.vertical .ui.fitted.checkbox {
+    margin-bottom: 2px;
+  }
+  .fitted.checkbox {
+    margin: 0px;
+    margin-bottom: -10px;
+  }
+}

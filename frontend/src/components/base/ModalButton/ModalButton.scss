@@ -1,0 +1,13 @@
+.ui.modal.argus-modal-btn {
+  background-color: #3f444f;
+  .header, .content, .actions {
+    background-color: #3f444f;
+    color: #b3bac8;
+  }
+  &:last-child {
+    border-top: 1px solid rgba(157, 164, 171, 0.15);
+  }
+  .header {
+    border-bottom: 1px solid rgba(157, 164, 171, 0.15);
+  }
+}

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Canvas component :smoke 1`] = `
+<div
+  className="argus-canvas cl_n"
+  style={
+    Object {
+      "height": "20px",
+      "width": "100px",
+    }
+  }
+>
+  <canvas
+    height={20}
+    width={100}
+  />
+</div>
+`;

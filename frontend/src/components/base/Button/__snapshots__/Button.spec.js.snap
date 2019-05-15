@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component :basic 1`] = `
+<Button
+  as="button"
+  className="cl_n argus-btn"
+  icon="Icon"
+  inverted={true}
+  props="for testing"
+  size="mini"
+  some="component"
+/>
+`;
+
+exports[`Button component :with_children 1`] = `
+<Button
+  as="button"
+  className="cl_n argus-btn"
+  inverted={true}
+  props="for testing"
+  size="mini"
+  some="component"
+>
+  <Icon
+    as="i"
+    name="Icon"
+  />
+  <div>
+    Some Stuff
+  </div>
+</Button>
+`;

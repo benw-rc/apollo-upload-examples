@@ -1,0 +1,14 @@
+@import "../../../scss/variables.scss";
+.ui.steps .step.argus-nav {
+  border-color: #595d66 !important;
+  color: $heading-color !important;
+  background-color: $panel-dark !important;
+  text-align: left;
+  &.selected {
+    background-color: #3f444f !important;
+    width: 101%;
+  }
+  .content .description{
+    color: $heading-color !important;
+  }
+}

@@ -1,0 +1,30 @@
+.argus-select {
+  display: inline-block;
+  .ui.horizontal.label {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #484d59 !important;
+    border: 1px solid #595d66 !important;
+    color: white !important;
+  }
+  .ui.selection.dropdown {
+    background-color: #31333d !important;
+    font-size: 0.85em;
+    margin: 10px;
+    max-height: 32.2852px;
+    i, .text {
+      color: white !important;
+    }
+    .menu .item {
+      background-color: #31333d !important;
+      color: white !important;
+    }
+    &.labeled {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

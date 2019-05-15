@@ -1,0 +1,11 @@
+.argus-content-column {
+  display: inline-block;
+  margin-top: 10px;
+  height: 100%;
+  padding: 15px;
+  width: 628px;
+  .argus-content-column-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

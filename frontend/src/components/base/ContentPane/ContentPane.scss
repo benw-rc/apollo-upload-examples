@@ -1,0 +1,40 @@
+@import "../../../scss/variables.scss";
+
+.argus-content-pane {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  right: 0px;
+  bottom: 0px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: $panel-main;
+  .argus-content-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    bottom: 0px;
+    background-color: $panel-main;
+    border-right: 1px solid $panel-med-dark;
+    padding: 15px;
+  }
+
+  .argus-contents-wrapper {
+    position: absolute;
+    padding: 15px;
+    left: 275px;
+    top: 15px;
+    bottom: 0px;
+    width: 1300px;
+    overflow: hidden;
+
+    .argus-content-contents {
+      display: flex;
+    }
+  }
+}

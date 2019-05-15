@@ -1,0 +1,54 @@
+@import "../../../scss/theme.scss";
+
+.argus-slider.slider {
+  &.slider-horizontal, &.slider-vertical {
+    .slider-handle {
+      border-radius: 6px;
+      width: 28px;
+      height: 28px;
+      background-image: linear-gradient(#484d59, #484d59);
+      border: 1px solid $panel-med-dark;
+    }
+    .slider-track {
+      background-image: linear-gradient($panel-med-dark, $panel-med-dark);
+      .slider-track-low, .slider-selection, .slider-track-high {
+        background-color: $panel-med-dark;
+        background-image: linear-gradient($panel-med-dark, $panel-med-dark);
+        border: 2px solid $panel-med-light;
+        border-radius: 4px;
+        box-shadow: none;
+      }
+    }
+  }
+  &.slider-horizontal {
+    .slider-track {
+      .slider-track-low, .slider-selection, .slider-track-high {
+        height: 16px;
+      }
+    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .slider-handle {
+      cursor: ew-resize;
+      margin-left: -15px;
+      margin-top: 0px;
+    }
+  }
+  &.slider-vertical {
+    .slider-track {
+      .slider-track-low, .slider-selection, .slider-track-high {
+        width: 16px;
+      }
+    }
+    .slider-handle {
+      cursor: ns-resize;
+      margin-left: -1px;
+      margin-top: -20px;
+    }
+    .tooltip.tooltip-main {
+      margin-left: 8px;
+      margin-top: -18px !important;
+    }
+
+  }
+}

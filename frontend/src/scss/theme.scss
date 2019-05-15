@@ -1,0 +1,107 @@
+@import "./text.scss";
+@import "./variables.scss";
+.argus-input-label {
+  background-color: #484d59 !important;
+  border: 1px solid #595d66 !important;
+  color: white !important;
+}
+body {
+  .ui.header {
+    color: $heading-color;
+  }
+  -webkit-text-size-adjust: none;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  .ui.button {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+  .ui.inverted.button {
+    box-shadow: 0 0 0 .5px #fff inset !important;
+  }
+  .ui.negative.message {
+    background-color: #88818185;
+    color: #ff9390;
+    padding: 1px;
+    .content {
+      color: inherit;
+      background-color: transparent;
+    }
+  }
+  .slider {
+    &.slider-horizontal, &.slider-vertical {
+      .slider-handle {
+        border-radius: 6px;
+        width: 28px;
+        height: 28px;
+        background-image: linear-gradient(#484d59, #484d59);
+        border: 1px solid $panel-med-dark;
+      }
+      .slider-track {
+        background-image: linear-gradient($panel-med-dark, $panel-med-dark);
+        .slider-track-low, .slider-selection, .slider-track-high {
+          background-color: $panel-med-dark;
+          background-image: linear-gradient($panel-med-dark, $panel-med-dark);
+          border: 2px solid $panel-med-light;
+          border-radius: 4px;
+          box-shadow: none;
+        }
+      }
+    }
+    &.slider-horizontal {
+      .slider-track {
+        .slider-track-low, .slider-selection, .slider-track-high {
+          height: 16px;
+        }
+      }
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .slider-handle {
+        cursor: ew-resize;
+        margin-left: -15px;
+        margin-top: 0px;
+      }
+    }
+    &.slider-vertical {
+      .slider-track {
+        .slider-track-low, .slider-selection, .slider-track-high {
+          width: 16px;
+        }
+      }
+      .slider-handle {
+        cursor: ns-resize;
+        margin-left: -1px;
+        margin-top: -20px;
+      }
+      .tooltip.tooltip-main {
+        margin-left: 8px;
+        margin-top: -18px !important;
+      }
+    }
+  }
+  .modal, .ui.modal.argus-modal-btn {
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    position: relative;
+    text-align: center;
+    height: auto;
+    .header {
+      text-align: left;
+    }
+  }
+  .ui.label {
+    background-color: #484d59 !important;
+    border: 1px solid #595d66 !important;
+    color: white !important;
+  }
+  .ui.dimmer {
+    z-index: 2000 !important;
+    .modal {
+      z-index: 2001 !important;
+    }
+  }
+  textarea {
+    background-color: #31333d !important;
+    color: white !important;
+  }
+}

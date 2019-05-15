@@ -1,0 +1,13 @@
+.argus-canvas {
+  position: relative;
+  canvas {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: black;
+    &.cover {
+      visibility: hidden;
+    }
+  }
+}

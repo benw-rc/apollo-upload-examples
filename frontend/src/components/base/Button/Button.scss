@@ -1,0 +1,41 @@
+@import "../../../scss/variables.scss";
+.ui.button.argus-btn {
+  box-shadow: 0 0 0 1px #fff inset !important;
+  color: #fff;
+  text-shadow: none !important;
+  &:focus {
+    box-shadow: 0 0 0 1px #fff inset !important;
+    text-shadow: inherit !important;
+    &.active {
+      color: black !important;
+    }
+    &.inverted{
+      box-shadow: none;
+    }
+    &.inverted:not(:active):not(.active) {
+      &.blue {
+        box-shadow: 0px 0px 0px 2px $blue inset !important;
+      }
+      &.red {
+        box-shadow: 0px 0px 0px 2px $red inset !important;
+      }
+      &.yellow {
+        box-shadow: 0px 0px 0px 2px $yellow inset !important;
+      }
+      &.green {
+        box-shadow: 0px 0px 0px 2px $green inset !important;
+      }
+      &.orange {
+        box-shadow: 0px 0px 0px 2px $orange inset !important;
+      }
+      &:not(.blue):not(.red):not(.yellow):not(.green):not(.orange) {
+        color: white !important;
+      }
+      background-color: transparent !important;
+    }
+  }
+  &.active {
+    background-color: $panel-v-light !important;
+  }
+
+}

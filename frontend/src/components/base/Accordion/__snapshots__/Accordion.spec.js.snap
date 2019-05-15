@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component :basic 1`] = `
+<Accordion
+  className="argus-accordion cln"
+  for_the="tests"
+  inverted={true}
+  onTitleClick={[Function]}
+  some="props"
+  styled={true}
+/>
+`;

@@ -1,0 +1,30 @@
+.argus-slider-toggle {
+  position: relative;
+  height: 25px;
+  width: 50px;
+  display: inline-block;
+  top: 5px;
+  right: 10px;
+  .track {
+    height: 5px;
+    background-color: black;
+    position: relative;
+    top: 10px;
+  }
+  &.right .handle {
+    right: -5px;
+    background: green linear-gradient(transparent, rgba(0, 0,0, 0.5));
+  }
+  &:not(.right) .handle {
+    left: -5px;
+    background: red linear-gradient(transparent, rgba(0, 0,0, 0.5));
+  }
+  .handle {
+    border-radius: 100%;
+    width: 21px;
+    height: 21px;
+    background: white linear-gradient(transparent, rgba(0, 0,0, 0.5));
+    position: absolute;
+    top: 2px;
+  }
+}

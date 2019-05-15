@@ -1,0 +1,20 @@
+.argus-input {
+  color: black !important;
+  opacity: 1 !important;
+  display: inline-block;
+  &.disabled input{
+    opacity: 0.45 !important;
+  }
+  &.dark {
+    input {
+      background-color: #31333d !important;
+      border: 1px solid #595d66 !important;
+      color: white !important;
+    }
+    .label {
+      background-color: #484d59 !important;
+      border: 1px solid #595d66 !important;
+      color: white !important;
+    }
+  }
+}

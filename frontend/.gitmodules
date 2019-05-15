@@ -1,0 +1,3 @@
+[submodule "rc-js-modules"]
+	path = rc-js-modules
+	url = https://github.com/readcoor/rc-js-modules

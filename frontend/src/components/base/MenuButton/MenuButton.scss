@@ -1,0 +1,43 @@
+@import "../../../scss/variables.scss";
+.argus-menu-btn {
+  >.text {
+    margin-left: -20px;
+    margin-right: -10px;
+  }
+  &.ui.labeled.icon.button {
+    color: white !important;
+    border: 1px solid $heading-color;
+    &:active, &:hover {
+      background: transparent !important;
+    }
+    .menu {
+      background-color: $panel-med-dark;
+      border: 1px solid $heading-color;
+      .item {
+        color: white;
+        padding: 11px 16px;
+      }
+      .ui.divider {
+        line-height: 0;
+        margin: 7px;
+        border-color: $heading-color !important;
+      }
+      &::after {
+        background-color: $panel-dark;
+        border-left: 1px solid $heading-color;
+        border-top: 1px solid $heading-color;
+      }
+    }
+  }
+}
+.argus-menu-button-popup.ui.bottom.right.popup {
+  background-color: $panel-dark;
+  border: 1px solid $heading-color;
+  color: white;
+  &:before {
+    background-color: $panel-dark;
+  }
+  .number-control input {
+    width: 200px;
+  }
+}

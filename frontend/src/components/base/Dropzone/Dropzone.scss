@@ -1,0 +1,13 @@
+@import '../../../scss/variables.scss';
+.ui.segment.dropzone-component {
+  background-color: $panel-med-dark !important;
+  border: 1px solid $border-main !important;
+  text-align: center;
+  padding: 0px;
+  padding-top: 30px;
+  .file-display {
+    .ui.argus-btn {
+      margin-left: 20px;
+    }
+  }
+}
